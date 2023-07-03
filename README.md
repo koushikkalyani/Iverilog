@@ -12,7 +12,7 @@ your testbench file should include the following in the code.
 $dumpfile("waveformfilename.vcd");
 $dumpvars(0,filename_tb.v);
 $finish;
-refer to my codes for refernce.
+refer to my codes for reference.
 now for compilation
 open terminal in the same directory and type
 1)iverilog -o filename_wave(user defined any name you can give) filename.v filename_tb.v

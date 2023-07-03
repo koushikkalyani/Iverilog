@@ -1,0 +1,35 @@
+$date
+	Fri Jun 30 12:23:19 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module oR_tb $end
+$var wire 1 ! ft $end
+$var reg 1 " at $end
+$var reg 1 # bt $end
+$scope module u0_DUT $end
+$var wire 1 " a $end
+$var wire 1 # b $end
+$var wire 1 ! f $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0#
+0"
+0!
+$end
+#5
+1!
+1#
+#10
+0#
+1"
+#15
+1#
+#20

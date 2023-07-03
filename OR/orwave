@@ -1,0 +1,60 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x55f2d094cdc0 .scope module, "oR_tb" "oR_tb" 2 2;
+ .timescale 0 0;
+v0x55f2d09974c0_0 .var "at", 0 0;
+v0x55f2d0997590_0 .var "bt", 0 0;
+v0x55f2d0997660_0 .net "ft", 0 0, L_0x55f2d0997760;  1 drivers
+S_0x55f2d094cf50 .scope module, "u0_DUT" "oRk" 2 7, 3 1 0, S_0x55f2d094cdc0;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /OUTPUT 1 "f";
+L_0x55f2d0997760 .functor OR 1, v0x55f2d09974c0_0, v0x55f2d0997590_0, C4<0>, C4<0>;
+v0x55f2d094eba0_0 .net "a", 0 0, v0x55f2d09974c0_0;  1 drivers
+v0x55f2d09972e0_0 .net "b", 0 0, v0x55f2d0997590_0;  1 drivers
+v0x55f2d09973a0_0 .net "f", 0 0, L_0x55f2d0997760;  alias, 1 drivers
+    .scope S_0x55f2d094cdc0;
+T_0 ;
+    %vpi_call 2 9 "$dumpfile", "test_oR.vcd" {0 0 0};
+    %vpi_call 2 10 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x55f2d094cdc0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55f2d09974c0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55f2d0997590_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55f2d09974c0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55f2d0997590_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55f2d09974c0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x55f2d0997590_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55f2d09974c0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55f2d0997590_0, 0, 1;
+    %delay 5, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55f2d09974c0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x55f2d0997590_0, 0, 1;
+    %vpi_call 2 17 "$finish" {0 0 0};
+    %jmp T_0;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "oR_tb.v";
+    "oRk.v";

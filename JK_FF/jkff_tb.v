@@ -9,7 +9,7 @@ end
 initial begin
 $dumpfile("jkff_test.vcd");
 $dumpvars(0,jkff_tb);
-clk=0;
+clk=0;j=0;k=0;
 
 #5 j=0;k=0;
 #5 j=0;k=1;

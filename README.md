@@ -20,3 +20,6 @@ if there are no errors above command will generate filename_wave.
 now type     vvp filename_wave
 this will generate waveformfilename.vcd file
 Now,to see waveforms type "gtkwave waveformfile.vcd" orelse double click on previously generated .vcd file.
+
+Watch video on my Youtube Channel FPGASpeaks https://youtu.be/92rmMcu5vGQ
+
